@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Golden Serenity Home Care</title>
+    <link rel="stylesheet" href="style2.css">
+
+ <!-- Standard favicon -->
+ <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+ 
+ <!-- Apple touch icons -->
+ <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+ 
+ <!-- Android icon -->
+ <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+ <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="WhiteTextLogo.png" alt="Golden Serenity Home Care Logo">
+        </div>
+        <nav class="navbar">
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Hamburger icon -->
+            </div>
+            <div class="navbar-menu" id="navbar-menu">
+            <div class="close-button" id="close-button">&times;</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>We Care About You.</h1>
+            <p>Get the care you need. From professionals who are leaders in their fields.</p>
+            <a href="contact.html" class="cta-button">Make an Appointment</a>
+            <a href="services.html" class="cta-button secondary">Learn More</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Golden Serenity Home Care</h2>
+            <div class="about-cards">
+                <!-- Care Facilities Card -->
+                <div class="about-card">
+                    <h3>Exceptional Care Facilities</h3>
+                    <p>Our facilities are equipped with the latest medical technology to provide the highest level of care. Every room is designed with comfort in mind to make our clients feel at ease and at home.</p>
+                </div>
+
+                <!-- Positive Client Experience Card -->
+                <div class="about-card">
+                    <h3>Client Success Stories</h3>
+                    <p>We’ve been honored to provide care for many wonderful clients and their families. Our team works closely with clients to ensure their needs are met and often exceeded, with countless families expressing gratitude for our dedication.</p>
+                </div>
+
+                <!-- Veteran-Owned Card -->
+                <div class="about-card">
+                    <h3>Owned by a Veteran</h3>
+                    <p>Golden Serenity Home Care is proudly veteran-owned, bringing the values of honor, respect, and service to our care approach. We understand the importance of giving back, and our mission is to serve our community with integrity and empathy.</p>
+                </div>
+
+                <!-- Professional Staff Card -->
+                <div class="about-card">
+                    <h3>Experienced and Compassionate Staff</h3>
+                    <p>Our staff includes certified healthcare professionals and caregivers trained to provide compassionate, top-notch care. Each member is committed to ensuring that our clients receive the highest quality of life possible.</p>
+                </div>
+            </div>
+            <br></br>
+            <a href="services.html" class="cta-button">Explore Our Services</a>
+        </div>
+    </section>
+
+    <section class="counties">
+        <div class="container">
+            <h2>Service Areas</h2>
+            <p>We proudly serve clients throughout the Atlanta Metropolitan area, including the following counties:</p>
+            <ul class="county-list">
+                <li>Fulton</li>
+                <li>DeKalb</li>
+                <li>Cobb</li>
+                <li>Gwinnett</li>
+                <li>Clayton</li>
+                <li>Forsyth</li>
+                <li>Henry</li>
+                <li>Cherokee</li>
+                <li>Douglas</li>
+                <li>Fayette</li>
+                <li>Rockdale</li>
+                <li>Newton</li>
+                <li>Paulding</li>
+                <li>Walton</li>
+                <li>Barrow</li>
+                <li>Spalding</li>
+                <li>Carroll</li>
+                <li>Pickens</li>
+                <li>Lamar</li>
+                <li>Butts</li>
+                <li>Haralson</li>
+                <li>Jasper</li>
+                <li>Heard</li>
+                <li>Morgan</li>
+                <li>Dawson</li>
+                <li>Putnam</li>
+                <li>Monroe</li>
+                <li>Harris</li>
+            </ul>
+        </div>
+    </section>
+    
+
+   
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p>404-446-6712</p>
+                <p>info@goldenserenityhomecare.org</p>
+            </div>
+            <div class="address">
+                <h3>Address</h3>
+                <p>Golden Serenity Home Care, Buford, Georgia.</p>
+            
+            </div>
+            <div class="clinic-hours">
+                <h3>clinic hours</h3>
+                <p>Mon-Fri 8:00 AM - 5:30 PM</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+         document.title = "About Us - Golden Serenity Home Care";
+
+        const hamburger = document.getElementById('hamburger');
+        const navbarMenu = document.getElementById('navbar-menu');
+        const closeButton = document.getElementById('close-button');
+
+        hamburger.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+
+        closeButton.addEventListener('click', () => {
+        navbarMenu.classList.remove('active');
+    });
+
+    document.querySelectorAll(".navbar a").forEach(link => {
+    if (link.href === window.location.origin + window.location.pathname) {
+        link.classList.add("active");
+    }
+});
+    </script>
+    
+</body>
+</html>

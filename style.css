@@ -98,9 +98,7 @@ header {
 .hero p {
     font-size: 1.5rem;
     margin-bottom: 4rem;
-   
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+   }
 
 .hero button {
     background-color: #E63976; /* Bright Pink */
@@ -169,6 +167,81 @@ header {
     color: #333;
 }
 
+.quick-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+/* Highlights Section */
+.highlights {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.highlights h2 {
+    font-size: 30px;
+    color: #4B0082; 
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Gcard-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.Gcard-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #E63976;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
 /* Footer */
 .footer {
     background-color: #4B0082;
@@ -194,70 +267,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.quick-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.quick-links a:hover {
-    text-decoration: underline;
-}
-
-/* Highlights Section */
-.highlights {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.highlights h2 {
-    font-size: 30px;
-    color: #4B0082; 
-    margin-bottom: 30px;
-    font-family: 'Courier New', Courier, monospace
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.card {
-    background-color: #f7f7f7;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    text-align: left;
-    align-items: center;
-}
-
-.card h3 {
-    font-size: 22px;
-    color: #E63976; /* Dark Purple */
-    margin-bottom: 10px;
-    align-items: center;
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.card p {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.5;
-    align-items: center;
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Media Queries */

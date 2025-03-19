@@ -83,7 +83,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background-image: url("elderly7.jpg");
+    background-image: url("images/elderly7.jpg");
     background-size: cover;
     background-position: center;
     padding: 10rem 0;
@@ -305,9 +305,13 @@ header {
     font-size: 16px;
 }
 
-.contact-info p{
+.quick-links a {
     color: white;
     text-decoration: none;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
 }
 
 

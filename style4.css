@@ -158,9 +158,13 @@ header {
     font-size: 16px;
 }
 
-.contact-info p{
+.quick-links a {
     color: white;
     text-decoration: none;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {

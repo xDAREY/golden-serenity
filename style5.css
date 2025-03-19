@@ -131,6 +131,18 @@ p {
     background-color: #4B0082;
 }
 
+.cta-button2 {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #4B0082;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
 /* About GAPP */
 .about-gapp {
     background: #fff;
@@ -153,6 +165,12 @@ p {
     font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 15px;
+}
+
+.about-gapp p {
+    font-weight: 500;
+    color: #000;
+    line-height: 1.6;
 }
 
 .about-gapp img {
@@ -184,9 +202,13 @@ p {
     width: 300px;
     padding: 20px;
     background: white;
-    color: #333;
+    color: #000000;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step h3 {
+    color: #4B0082;
 }
 
 /* Why Choose Us */
@@ -284,9 +306,13 @@ p {
     font-size: 2rem;
 }
 
+.faq h3 {
+    color: #4B0082;
+}
+
 .question {
     background: white;
-    color: #333;
+    color: #000000;
     padding: 20px;
     margin: 10px auto;
     max-width: 600px;
@@ -296,6 +322,11 @@ p {
 
 .question h3 {
     font-size: 1.2rem;
+}
+
+.question:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .faq .cta-button {
@@ -317,6 +348,10 @@ p {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
+}
+
+.footer-content h3{
+    color: #E63976;
 }
 
 .footer-left, .footer-right {

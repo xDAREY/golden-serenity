@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     line-height: 1.6;
     background-color: #f8f8f8;
     color: #333;
@@ -102,15 +102,15 @@ header {
     color: white;
 }
 
-.hero button {
-    background-color: #E63976; /* Bright Pink */
+/* .hero button {
+    background-color: #E63976; 
     color: #fff;
     padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
     margin: 0 1rem;
-}
+} */
 
 .hero button:hover {
     background-color: #D141A1; /* Pinkish Purple */
@@ -287,22 +287,32 @@ header {
 }
 
 .footer-content {
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
-.footer-content div {
-    flex: 1;
-    margin: 10px;
-}
-
-.footer h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+.footer-content h3{
     color: #E63976;
 }
 
-.footer p {
-    font-size: 16px;
+.footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-right {
+    flex: 1;
+    margin-left: 20px;
 }
 
 .quick-links a {
@@ -365,6 +375,10 @@ header {
 
     .hero p {
         font-size: 1.2rem;
+    }
+
+    .cta-button {
+        padding: 5px 10px;
     }
 
     .about-content,

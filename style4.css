@@ -158,16 +158,6 @@ header {
     gap: 20px;
 }
 
-.footer-left {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.footer-right {
-    flex: 1;
-    margin-left: 20px;
-}
-
 .quick-links a {
     color: white;
     text-decoration: none;
@@ -237,5 +227,20 @@ header {
         margin: 10px 0; 
     }
 
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        align-items: center;
+        text-align: center;
+   
+    }
+
+    .footer-right {
+        margin-top: 20px;
+    }
     
 }

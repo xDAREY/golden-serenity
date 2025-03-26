@@ -179,6 +179,51 @@ p {
     font-weight: bold; 
 }
 
+.cost {
+    padding: 5rem 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.cost h2 {
+    color: #4B0082;
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+
+.cost-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.cost-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cost-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cost-card h3 {
+    color: #E63976;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.cost-card p {
+    color: #333;
+    line-height: 1.6;
+}
+
 /* How It Works */
 .how-it-works {
     text-align: center;
@@ -285,41 +330,80 @@ p {
 /* FAQ Section */
 .faq {
     padding: 50px 20px;
-    text-align: center;
     background-color: #E63976;
     color: white;
+    text-align: center;
 }
 
 .faq h2 {
     font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.faq h3 {
-    color: #4B0082;
+.faq-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
-.question {
+.faq-questions {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-btn {
     background: white;
-    color: #000000;
+    color: #4B0082;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.faq-btn:hover,
+.faq-btn.active {
+    background: #4B0082;
+    color: white;
+}
+
+.faq-answers {
+    width: 60%;
+    background: white;
+    color: black;
     padding: 20px;
-    margin: 10px auto;
-    max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    min-height: 100px;
 }
 
-.question h3 {
-    font-size: 1.2rem;
+.faq-answer {
+    display: none;
+    font-size: 1rem;
 }
 
-.question:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+.faq-answer.active {
+    display: block;
 }
 
-.faq .cta-button {
+.cta-button2 {
+    display: inline-block;
     margin-top: 20px;
+    padding: 10px 15px;
+    background: #4B0082;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
+
 
 /* Footer */
 .footer {
